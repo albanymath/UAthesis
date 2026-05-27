@@ -1,3 +1,9 @@
+% Use LuaLaTeX and the most recent LaTeX release.
+%
+% On Overleaf, e.g., go to Settings > Compiler and select:
+% Compiler > LuaLaTeX
+% TeX Live version > Rolling TeX Live
+% https://docs.overleaf.com/troubleshooting-and-support/tex-live#labs-rolling-tex-live-experiment
 \DocumentMetadata{
   lang          = en-US,
   pdfstandard   = {UA-2,A-4F},
@@ -58,9 +64,9 @@
 \makeatother
 
 
+\NewDocumentCommand\arXiv{m}{\href{https://www.arxiv.org/abs/#1}{\nolinkurl{arXiv:#1}}}
 \NewDocumentCommand\DOI  {m}{\href{https://doi.org/#1}{\nolinkurl{#1}}}
 \NewDocumentCommand\Zbl  {m}{Zbl~\href{https://zbmath.org/?q=an\%3A#1}{#1}}
-\NewDocumentCommand\arXiv{m}{\href{https://www.arxiv.org/abs/#1}{\nolinkurl{arXiv:#1}}}
 
 
 \numberwithin{equation}{section}
@@ -79,6 +85,7 @@
 
 \pagenumbering{roman}
 
+% \maketitle{Thesis or Dissertation}{Degree Type}{School or College Name}[Optional: Department Name]
 \maketitle{Thesis}{Master of Arts}{College of Arts \& Sciences}[Department of Mathematics \& Statistics]
 
 
