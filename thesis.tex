@@ -21,7 +21,7 @@
 
 \title{Title of Thesis/Dissertation}
 \author{First Middle Initial Last Name}
-\date{Spring 2026}
+\date{Graduation Term and Year}
 
 
 \usepackage[margin=1in, footskip=0.5in, nohead]{geometry}
@@ -44,7 +44,7 @@
 \RenewExpandableDocumentCommand\contentsname{}{Table of Contents}
 \makeatletter
 \def\@seccntformat#1{\csname the#1\endcsname. }
-\RenewDocumentCommand\maketitle{mmmo}{%
+\RenewDocumentCommand\maketitle{mmmo}{% see example below
   \thispagestyle{empty}
   \vspace*{2\baselineskip}
   \begin{center}
@@ -85,8 +85,8 @@
 
 \pagenumbering{roman}
 
-% \maketitle{Thesis or Dissertation}{Degree Type}{School or College Name}[Optional: Department Name]
-\maketitle{Thesis}{Master of Arts}{College of Arts \& Sciences}[Department of Mathematics \& Statistics]
+\maketitle{Thesis or Dissertation}{Master of Arts/Science or Doctor of Philosophy/Psychology/Public Health}{College or School Name}[Optional: Department Name]
+% the \maketitle command uses the document’s \title, \author, & \date set above
 
 
 \newpage
